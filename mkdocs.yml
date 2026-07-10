@@ -1,5 +1,6 @@
 site_name: C++ 学习笔记
 site_description: C++ 学习笔记
+site_url: https://github.com/Michelangelo9001/cpp_learning.git
 
 theme:
   name: material
