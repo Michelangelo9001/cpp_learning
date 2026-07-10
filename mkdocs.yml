@@ -1,0 +1,38 @@
+site_name: C++ 学习笔记
+site_description: C++ 学习笔记
+
+theme:
+  name: material
+  language: zh
+
+  palette:
+    scheme: default
+    primary: custom
+    accent: blue
+
+  features:
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+
+plugins:
+  - gh-admonitions
+
+markdown_extensions:
+  - admonition
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.superfences
+
+  - toc:
+      permalink: true
+
+nav:
+  - 基础语法: index.md
+
+extra_css:
+  - stylesheets/extra.css

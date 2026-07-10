@@ -1,0 +1,90 @@
+/* =========================
+   网站主题颜色
+   ========================= */
+
+:root {
+  /* 中等偏深蓝色 */
+  --md-primary-fg-color: #2f6291;
+
+  /* 浅色状态 */
+  --md-primary-fg-color--light: #4f82b0;
+
+  /* 深色状态 */
+  --md-primary-fg-color--dark: #244c70;
+
+  /* 链接和按钮颜色 */
+  --md-accent-fg-color: #3978ad;
+}
+
+
+/* =========================
+   顶部导航栏高度
+   ========================= */
+
+@media screen and (min-width: 60em) {
+
+  /* 顶部栏高度约为默认高度的两倍 */
+  .md-header {
+    height: 4.8rem;
+  }
+
+  /* 顶部栏内部内容垂直居中 */
+  .md-header__inner {
+    height: 4.8rem;
+    align-items: center;
+  }
+
+  /* 网站标题稍微放大 */
+  .md-header__title {
+    font-size: 1.05rem;
+  }
+
+  /* Logo 上下留出空间 */
+  .md-header__button.md-logo {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+
+/* =========================
+   Important 提示框
+   接近 Typora 和 GitHub 样式
+   ========================= */
+
+.md-typeset .admonition.warning {
+  border: 0;
+  border-left: 4px solid #8250df;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* 提示框标题 */
+.md-typeset .warning > .admonition-title {
+  background-color: transparent;
+  color: #8250df;
+  font-weight: 700;
+}
+
+/* 提示框图标 */
+.md-typeset .warning > .admonition-title::before {
+  background-color: #8250df;
+}
+
+/* 正文间距 */
+.md-typeset .admonition.warning > p {
+  margin-left: 0.2rem;
+}
+
+
+/* =========================
+   标题间距
+   ========================= */
+
+.md-typeset h1 {
+  margin-top: 2rem;
+}
+
+.md-typeset h2 {
+  margin-top: 1.5rem;
+}
